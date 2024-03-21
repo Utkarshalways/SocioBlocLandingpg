@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Caveat:wght@500&family=Inter:wght@100..900&family=Mooli&family=Nova+Square&family=Oswald:wght@500&family=Roboto+Condensed&family=Teko:wght@300&display=swap');
+
+
+// Most used Functions
+@mixin flex(){
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+// Fonts
+
+$inter: "Inter", sans-serif;
+$source : "../Assets/logo.png";
+
+
+// Colors segement
+$first : #d265f9;
+$second : #090610;
+$white : #fff;
+ $color3 : #743ad5;
+ $color4 : #d53a9d;
+ $boxcolor : #252525;
+
+// $linear :  linear-gradient(45deg,$first,$second);
+
+
+
+
+
+
+

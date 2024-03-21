@@ -1,0 +1,21 @@
+@import "../../../Style/Storage";
+
+.card{
+    border: 2px solid red;
+    
+    display: inline-block;
+    flex-direction: column;
+
+
+    >div{
+            
+            overflow: hidden;
+
+            >img{
+height: 12rem;
+            width: 8rem;
+            }
+            // border: 2px solid red;
+        
+    }
+}

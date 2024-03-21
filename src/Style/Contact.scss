@@ -1,0 +1,47 @@
+@import "./Storage";
+
+.contactmain{
+    height: 80vh;
+    width: 100%;
+    @include flex;
+
+        form{
+       @include flex;
+        border: 2px solid white;
+        height: 70%;
+        width: 80%;
+        background-color: $boxcolor;
+        flex-direction: column;
+        gap: 2rem;
+        // align-items: start;
+        
+
+            label{
+                
+                // background: linear-gradient(to right,$color3,$color4) padding-box;
+                // color: calc(linear-gradient(to right,$color3,$color4));
+                color: $white;
+                vertical-align: center;
+                
+                
+                input{
+
+                    padding: 0.6rem;
+                    margin: 0% 1rem;
+                    border-radius: 14px;
+                    // background: linear-gradient(to right,$color3,$color4) border-box
+                    //             ,linear-gradient($white,$white) padding-box;
+                    
+                  
+                }
+                    
+            }
+
+            .cbtn{
+
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    
+}

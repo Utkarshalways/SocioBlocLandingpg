@@ -1,0 +1,24 @@
+@import "../../../Style/Storage";
+
+
+
+
+
+.border-gradient {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, $color3, $color4) border-box;
+  border-radius: 10%;
+  border: 3px solid transparent;
+  padding: 0.6rem;
+
+
+
+  &:hover{
+
+    background: linear-gradient(to right , $color4 ,$color3) padding-box,
+                linear-gradient($white , $white) border-box;
+                color: white;
+
+  }
+
+}
