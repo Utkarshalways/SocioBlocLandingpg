@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import "../Style/_Storage.scss";
 
 const Gradientdiv = ({
 children
@@ -12,7 +13,7 @@ children
 
         useEffect(() => {
           const updategradient = (e) => {
-            setcursorPosition({x:e.clientX,y:e.clientY})
+            setcursorPosition({x:e.clientX,y:e.clientY-100})
           }
           console.log(cursorPosition);
 
@@ -35,7 +36,7 @@ children
     <div
       className="gradientdiv"
       style={{
-        background: ` radial-gradient(circle at ${cursorPosition.x}px ${cursorPosition.y}px ,   0%,  20%,  100%)`,
+        background: ` radial-gradient(circle at ${cursorPosition.x}px ${cursorPosition.y}px ,  #d265f9 0%,  #743ad5 20%,  #d53a9d 100%)`,
       }}
     >
       {children}
