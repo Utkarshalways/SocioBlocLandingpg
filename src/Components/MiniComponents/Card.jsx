@@ -1,30 +1,29 @@
-import React from 'react'
-import "./Style/Card.scss"
-
-const Card = ({
-
-  img = "",
-  alt ="",
-  text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore id harum quo amet, voluptatem error!"
+import React from "react";
+import "./Style/Card.scss";
 
 
-
-}) => {
+const Card = ({ imgsrc = "", category = "", heading = "" }) => {
   return (
-    <div className='card' >
+    <div className="card">
+      <div className="image">
+        <img src={imgsrc} alt="image" />
+      </div>
+      {/* <hr /> */}
+      <div className="content">
+        <div className="category">{category}</div>
 
-    <div>
-    <img src={img} alt={alt} />
+        <div className="
+        contentheading">
+          {heading}
+        </div>
+
+        <div className="contenttext">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+          nihil. Reiciendis odio repellendus
+        </div>
+      </div>
     </div>
+  );
+};
 
-    <div>
-
-      {text}
-    
-    </div>
-        
-    </div>
-  )
-}
-
-export default Card
+export default Card;

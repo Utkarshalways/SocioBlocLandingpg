@@ -1,15 +1,16 @@
 @import "_Storage";
-.base{
-
-    background-color: $first;
-}
 
 
-.home1{
+.gradientdiv{
+
     height: 100vh;
     width: 100%;
+}
+.home1{
+    height: 100%;
+    width: 100%;
     display: flex;
-    background: radial-gradient( farthest-corner at 40px 40px , $first 0% ,$second  100% );
+    // background: radial-gradient( farthest-corner at 40px 40px , $first 0% ,$second  100% );
     border-radius: 0 0 20% 20%;
     // position: absolute;
 
@@ -92,5 +93,10 @@
     width: 100%;
     background-color: $first;
     // margin-top: -200px;
+
+    .left2{
+
+        @include flex;
+    }
     
 }
