@@ -4,6 +4,7 @@ import Buttons from './MiniComponents/Buttons';
 import hand from "../Assets/logo.png"
 import Card from './MiniComponents/Card';
 import Gradientdiv from './Gradientdiv';
+import Home2 from './Home2';
 
 const Home = () => {
   return (
@@ -37,31 +38,9 @@ const Home = () => {
         </div>
       </Gradientdiv>
 
-        <div className="home2">
-          this is home 2
-          <div className="left2">
-            <Card
-              imgsrc="https://cdn.dribbble.com/users/1824846/screenshots/5087861/girl_character__avtar__1x.png"
-              alt="Logo"
-              text="this is just for the texting now this will contain the paragraph"
-            />
-            <Card
-              imgsrc="https://cdn.dribbble.com/users/1824846/screenshots/5087861/girl_character__avtar__1x.png"
-              alt="Logo"
-              text="this is just for the texting now this will contain the paragraph"
-            />
-            <Card
-              imgsrc="https://cdn.dribbble.com/users/1824846/screenshots/5087861/girl_character__avtar__1x.png"
-              alt="Logo"
-              text="this is just for the texting now this will contain the paragraph"
-            />
-            <Card
-              imgsrc="https://cdn.dribbble.com/users/1824846/screenshots/5087861/girl_character__avtar__1x.png"
-              alt="Logo"
-              text="this is just for the texting now this will contain the paragraph"
-            />
-          </div>
-        </div>
+
+     
+        <Home2/>
       
     </>
   );
