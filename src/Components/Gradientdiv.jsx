@@ -6,16 +6,17 @@ const Gradientdiv = ({
 children
 }) => {
 
-    
 
 
         const [cursorPosition, setcursorPosition] = useState({x:0,y:0});
 
         useEffect(() => {
+
+
           const updategradient = (e) => {
             setcursorPosition({x:e.clientX,y:e.clientY-100})
           }
-          console.log(cursorPosition);
+          // console.log(cursorPosition);
 
 
           window.addEventListener("mousemove",updategradient);
@@ -25,11 +26,6 @@ children
           }
         }, [cursorPosition])
         
-        
-
-        
-
-    
 
 //  
   return (
@@ -42,6 +38,7 @@ children
       {children}
     </div>
   );
+
 }
 
 export default Gradientdiv

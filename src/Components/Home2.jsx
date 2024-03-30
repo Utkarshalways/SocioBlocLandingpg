@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/Home2.scss";
-import Gradientdiv from "./Gradientdiv";
+// import Gradientdiv from "./Gradientdiv";
 import Card from "./MiniComponents/Card";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -13,24 +13,24 @@ const Home2 = () => {
       setcursorPointer({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener("mousemove", setcursorPointer);
+    window.addEventListener("mousemove", updateCursor);
 
     return () => {
-      window.removeEventListener("mousemove", setcursorPointer);
+      window.removeEventListener("mousemove", updateCursor);
     };
   }, [cursorPointer]);
 
  
-
   return (
     <>
       <div className="home2">
         this is second home
         <div className="left2" 
-        
-        // style={{
-        //     onmouseOver= transform:`translateX(10px)`;
-        // }} 
+        style={{
+          //  transform:`rotate(10deg) translateX(calc((${cursorPointer.x})/10))` 
+          transform:`translateX(calc(${cursorPointer}/10))`
+          // transform: `rotate(10deg)`
+        }} 
         >
                   <Card
             imgsrc="https://cdn.dribbble.com/users/1824846/screenshots/5087861/girl_character__avtar__1x.png"
